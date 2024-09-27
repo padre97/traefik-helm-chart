@@ -582,6 +582,16 @@ env:
 envFrom: []
 
 ports:
+  os-cluster-port:
+    expose: true
+    exposedPort: 9300
+    port: 9300
+    protocol: TCP
+  os-api-port:
+    expose: true
+    exposedPort: 9200
+    port: 9200
+    protocol: TCP
   traefik:
     port: 9000
     # -- Use hostPort if set.
